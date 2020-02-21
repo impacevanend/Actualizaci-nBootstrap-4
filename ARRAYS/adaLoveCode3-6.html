@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>objetosDefinidosPorElUsuario</title>
+    <Script>
+   
+
+    var animales = ["perro","gato","hamster"];
+    //constructor--> var nombreArray = new Array(valores, valores,valores);
+    var animales2 = new Array("perro","gato","hamster");
+    //nombreArray[indice del elemento]; el primer elemento es el 0
+    var miAnimal = animales[0];
+    
+    //Mostrar todo el array utilizando instrucciones de mostrar.
+    alert(miAnimal);
+
+    // PROPIEDADES
+    // length: devuele la longitud del array(número de elementos);
+    document.write("<br/>La longitud del array es: "+animales.length);
+
+    //Mostrar los valores del array uno a uno
+    document.write("</br></br> Todos los elementos:"+"</br>");
+    for(var i=0;i<animales.length;i++){
+        
+        document.write("</br>"+animales[i]+"</br> ");
+    }
+
+     /*
+    MÉTODOS
+    Array.isArray(nombre array); devuelve true si es un objeto de tipo array
+    typeof nombre del arra = sera igual a object
+    
+    
+    */
+   document.write("</br> es un array:");
+   document.write(" "+Array.isArray(animales));
+    
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>
